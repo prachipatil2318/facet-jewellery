@@ -1,10 +1,88 @@
 *{
-    background-color:#FFF9F0;
-    padding:0;
-    margin:5px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Navbar styling */
+.facet-navbar {
+    background-color: #f8e2c1;
+    padding: 12px 30px;
 }
 
-.navbar{
-    background-color:#FFF9F0;
+/* Brand */
+.facet-navbar .navbar-brand {
+    color: #654321;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Center navigation items */
+.facet-navbar .navbar-collapse {
+    align-items: center;
+}
+
+.facet-navbar .navbar-nav {
+    gap: 25px;
+}
+
+/* Navigation links */
+.facet-navbar .nav-link {
+    color: #654321;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+/* Search form */
+.search-form {
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.search-form .form-control {
+    width: 180px;
+}
+
+.search-btn {
+    background-color: #654321;
+    color: white;
+    border: 1px solid #654321;
+    padding: 8px 16px;
+}
+
+.banner-img {
+    display: block;
+    width: 97%;
+    height: 500px;
+    object-fit: cover;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    color: white;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.banner-text h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.banner-text p {
+    font-size: 18px;
+}
+
+.banner-text .btn {
+    background-color: #654321;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
 }
