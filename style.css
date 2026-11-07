@@ -86,3 +86,15 @@
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
 }
+
+
+.main-section{
+    margin: 20px;
+    /* display: flex;
+    justify-content:space-evenly;
+    align-items: space-evenly; 
+    gap: 20px; */
+    background-color: plum;
+    border-radius: 10px;
+    padding: 10px;
+}
