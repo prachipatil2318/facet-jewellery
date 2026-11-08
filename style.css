@@ -1,6 +1,10 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 /* Navbar styling */
 .facet-navbar {
     background-color: #f8e2c1;
