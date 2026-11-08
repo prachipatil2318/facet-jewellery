@@ -49,20 +49,32 @@
     padding: 8px 16px;
 }
 
+
+/* Banner */
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    padding: 10px 1.5%;
+}
+
 .banner-img {
     display: block;
-    width: 97%;
-    height: 500px;
+    width: 100%;
+    height: clamp(220px, 40vw, 500px);
     object-fit: cover;
-    margin: 10px auto 0;
+    object-position: center;
     border-radius: 10px;
 }
 
+/* Banner Text */
 .banner-text {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
+    width: 45%;
     max-width: 500px;
     color: white;
     text-shadow: 2px 2px 5px gray;
@@ -70,42 +82,195 @@
 
 .banner-text h1 {
     font-family: Georgia, serif;
-    font-size: 42px;
+    font-size: clamp(20px, 3.5vw, 42px);
     font-weight: bold;
 }
 
 .banner-text p {
-    font-size: 18px;
+    font-size: clamp(12px, 1.5vw, 18px);
 }
 
 .banner-text .btn {
     background-color: #654321;
     color: white;
-    padding: 12px 25px;
-    border-radius: 0;
+    padding: 10px 20px;
+    font-size: clamp(11px, 1.2vw, 16px);
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
 }
 
 
-.main-section{
-    margin: 20px;
-    /* display: flex;
-    justify-content:space-evenly;
-    align-items: space-evenly; 
-    gap: 20px; */
-    background-color: plum;
+/* main section */
+
+/* Main Section */
+.main-section {
+    margin: 15px;
+    background-color: #f8e2c1;
     border-radius: 10px;
-    padding: 10px;
-    
+    padding: 25px 15px;
 }
 
-.main-section .card-container .card .card-body{
-    height: 500px;
-
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-.main-section .card-container .card .card-body a .card-img{
-    width: 100%;
-    height:400px;
+
+/* Common Card Styling */
+.main-section .card-container section {
+    flex: 1 1 220px;
+    max-width: 450px;
+    height: 300px;
     border-radius: 50%;
+    background-color: #f8e2c1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
 }
+
+/* Individual Images */
+.card1 {
+    background-image: url("images/ring.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card2 {
+    background-image: url("images/necklace.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card3 {
+    background-image: url("images/bracelet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card4 {
+    background-image: url("images/earrings.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Hover Effect */
+.main-section .card-container section:hover {
+    transform: scale(1.05);
+}
+
+/* for banner and main section */
+
+@media (max-width: 768px) {
+
+    .banner-img {
+        height: 300px;
+    }
+
+    .banner-text {
+        left: 6%;
+        width: 55%;
+    }
+
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .main-section {
+        margin: 10px;
+        padding: 20px 10px;
+    }
+
+    .card-container {
+        gap: 20px;
+    }
+
+    .main-section .card-container section {
+        flex: 0 1 220px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* Banner */
+    .banner {
+        padding: 8px 10px;
+    }
+
+    .banner-img {
+        height: 220px;
+        object-position: center;
+    }
+
+    .banner-text {
+        left: 7%;
+        width: 75%;
+    }
+
+    .banner-text h1 {
+        font-size: 21px;
+        line-height: 1.2;
+    }
+
+    .banner-text p {
+        font-size: 12px;
+    }
+
+    .banner-text .btn {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+
+    /* Main Section */
+    .main-section {
+        margin: 8px;
+        padding: 20px 10px;
+    }
+
+    .card-container {
+        gap: 15px;
+    }
+
+    .main-section .card-container section {
+        flex: 0 1 145px;
+        width: 145px;
+        height: 145px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .banner-img {
+        height: 190px;
+    }
+
+    .banner-text {
+        width: 80%;
+    }
+
+    .banner-text h1 {
+        font-size: 18px;
+    }
+
+    .banner-text p {
+        font-size: 11px;
+    }
+
+    .banner-text .btn {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .main-section .card-container section {
+        flex: 0 1 125px;
+        height: 125px;
+    }
+}
+
+
