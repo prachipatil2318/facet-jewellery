@@ -131,7 +131,13 @@
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
 }
-
+.main-heading{
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+    margin-bottom: 20px;
+}
 /* Individual Images */
 .card1 {
     background-image: url("images/ring.jpg");
@@ -274,3 +280,81 @@
 }
 
 
+/* About Facet Section */
+
+.about-facet {
+    background-color: #f8e2c1;
+    color: #654321;
+    padding: 25px 15px;
+    margin: 15px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-facet h1 {
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-facet h2 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-facet h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.about-facet p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #654321;
+    text-align: justify;
+}
+
+.collection-info {
+    background-color: #f8e2c1;
+    padding: 25px;
+    height: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.collection-info:hover {
+    transform: translateY(-5px);
+}
+
+.facet-tagline {
+    margin-top: 25px;
+    font-style: italic;
+    color: #654321;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+
+    .about-facet {
+        padding: 15px 0;
+    }
+
+    .about-facet h2 {
+        font-size: 23px;
+    }
+
+    .about-facet h3 {
+        font-size: 19px;
+    }
+
+    .about-facet p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .collection-info {
+        padding: 18px;
+    }
+}
